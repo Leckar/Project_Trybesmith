@@ -1,4 +1,4 @@
-export = {
+const statusPack = {
   OK_STATUS: 200,
   CREATED_STATUS: 201,
   NO_CONTENT_STATUS: 204,
@@ -8,3 +8,5 @@ export = {
   CONFLICT_STATUS: 409,
   UNPROCESSABLE_ENTITY: 422,
 };
+
+export = statusPack;

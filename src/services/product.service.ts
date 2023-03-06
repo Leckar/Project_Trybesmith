@@ -1,9 +1,7 @@
 import productsModel from '../models/products.model';
 import { NewProduct, Product } from '../types';
-import newProductValidation from './validations/newProduct.validation';
 
-const create = async (product:NewProduct): Promise<(Product | undefined)> => {
-  if (!newProductValidation(product)) return undefined;
+const create = async (product:NewProduct): Promise<Product> => {
   const result = await productsModel.create(product);
   return result as Product;
 };
