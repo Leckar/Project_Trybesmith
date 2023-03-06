@@ -19,3 +19,9 @@ export type NewProduct = {
 export type Product = {
   id: number,
 } & NewProduct;
+
+export type Order = {
+  id: number,
+  userId: number,
+  productsIds: number[],
+};

@@ -2,13 +2,13 @@ import productsModel from '../models/products.model';
 import { NewProduct, Product } from '../types';
 
 const create = async (product:NewProduct): Promise<Product> => {
-  const result = await productsModel.create(product);
-  return result as Product;
+  const newProduct = await productsModel.create(product);
+  return newProduct as Product;
 };
 
 const findAll = async (): Promise<Product[]> => {
-  const result = await productsModel.findAll();
-  return result;
+  const request = await productsModel.findAll();
+  return request;
 };
 
 export = {
