@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import productService from '../services/product.service';
+import productService from '../services/products.service';
 import statusPack from '../Utils/httpStatuses';
 
 const { CREATED_STATUS, OK_STATUS } = statusPack;
