@@ -11,5 +11,9 @@ router.post(
   newProductValidation,
   productsController.create,
 );
+router.get(
+  '/',
+  productsController.getAll,
+);
 
 export = router;
