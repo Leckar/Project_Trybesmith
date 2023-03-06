@@ -1,6 +1,6 @@
 import {
   ResultSetHeader,
-  // RowDataPacket,
+  RowDataPacket,
 } from 'mysql2';
 import {
   NewUser, User,
@@ -22,15 +22,16 @@ const create = async (user: NewUser): Promise<User> => {
     level } as User;
 };
 
-// const findAll = async (): Promise<Product[]> => {
-//   const [rows] = await connection
-//     .execute<RowDataPacket[]>(
-//     'SELECT * FROM Trybesmith.products',
-//   );
-//   return rows as Product[];
-// };
+const findByPK = async (username: string): Promise<(User | undefined)> => {
+  const [[userData]] = await connection
+    .execute<RowDataPacket[]>(
+    'SELECT * FROM Trybesmith.users WHERE username = ?',
+    [username],
+  );
+  return userData as (User | undefined);
+};
 
 export = {
   create,
-  // findAll,
+  findByPK,
 };

@@ -9,7 +9,15 @@ export type User = {
   id: number,
 } & NewUser;
 
-export type Payload = Omit<User, 'password'>;
+export type Payload = {
+  id: number,
+  username: string,
+};
+
+export type LoginCredentials = {
+  username: string,
+  password: string,
+};
 
 export type NewProduct = {
   name: string,

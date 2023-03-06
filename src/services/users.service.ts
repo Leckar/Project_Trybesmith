@@ -1,12 +1,12 @@
 import userModel from '../models/users.model';
 import { NewUser } from '../types';
-import tokenManager from '../Utils/jwtManager';
+import tokenManager from '../Authenticator/jwtManager';
 
 const { tokenGenerator } = tokenManager;
 
 const create = async (user: NewUser) => {
-  const newUser = await userModel.create(user);
-  const token = tokenGenerator(newUser);
+  const { id, username } = await userModel.create(user);
+  const token = tokenGenerator({ id, username });
   return token;
 };
 
