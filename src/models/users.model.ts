@@ -13,7 +13,7 @@ const create = async (user: NewUser): Promise<User> => {
     password } = user;
   const [{ insertId }] = await connection
     .execute<ResultSetHeader>(
-    'INSERT INTO Trybesmith.users (username, vocation, level, password) VALUES (?, ?)',
+    'INSERT INTO Trybesmith.users (username, vocation, level, password) VALUES (?, ?, ?, ?)',
     [username, vocation, level, password],
   );
   return { id: insertId,

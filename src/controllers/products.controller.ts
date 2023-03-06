@@ -5,8 +5,8 @@ import statusPack from '../Utils/httpStatuses';
 const { CREATED_STATUS, OK_STATUS } = statusPack;
 
 const create = async (req: Request, res: Response) => {
-  const { body: { name, amount } } = req;
-  const newProduct = await productService.create({ name, amount });
+  const { product } = req.body;
+  const newProduct = await productService.create(product);
   res.status(CREATED_STATUS).json(newProduct);
 };
 
