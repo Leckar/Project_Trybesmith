@@ -1,6 +1,6 @@
 import userModel from '../models/users.model';
 import { NewUser } from '../types';
-import tokenManager from '../Authenticator/jwtManager';
+import tokenManager from '../Utils/jwtManager';
 
 const { tokenGenerator } = tokenManager;
 

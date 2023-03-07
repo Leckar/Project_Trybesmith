@@ -33,3 +33,5 @@ export type Order = {
   userId: number,
   productsIds: number[],
 };
+
+export type NewOrder = Omit<Order, 'id'>;
