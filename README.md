@@ -23,7 +23,6 @@ Essa é uma RESTful API desenvolvida em Typescript para gerenciar estoque e vend
   MYSQL_USER=root
   MYSQL_PASSWORD=password
   MYSQL_HOST=localhost
-  JWT_SECRET=secret
 ```
  4. Inicie a aplicação:
 ```bash
