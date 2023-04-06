@@ -10,22 +10,22 @@ Essa é uma RESTful API desenvolvida em Typescript para gerenciar estoque e vend
  - MySQL
 
 ## Instalação e execução
- - Clone o repositório:
+ 1. Clone o repositório:
 ```bash
   git clone git@github.com:Leckar/Projeto-Trybesmith.git
 ```
- - Instale as dependências:
+ 2. Instale as dependências:
 ```bash
   npm install
 ```
- - Crie o arquivo .env com as informações do banco de dados:
+ 3. Crie o arquivo .env com as informações do banco de dados:
 ```shell
   MYSQL_USER=root
   MYSQL_PASSWORD=password
   MYSQL_HOST=localhost
   JWT_SECRET=secret
 ```
- - Inicie a aplicação:
+ 4. Inicie a aplicação:
 ```bash
   npm start
 ```
