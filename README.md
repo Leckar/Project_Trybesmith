@@ -28,7 +28,7 @@ Essa é uma RESTful API desenvolvida em Typescript para gerenciar estoque e vend
 ```bash
   npm start
 ```
-### Endpoints
+## Endpoints
 
 POST /users - cadastro de usuários
 
