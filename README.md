@@ -12,7 +12,7 @@ Essa é uma RESTful API desenvolvida em Typescript para gerenciar estoque e vend
 ## Instalação e execução
  - Clone o repositório:
 ```bash
-  git clone https://github.com/Leckar/Projeto-Trybesmith
+  git clone git@github.com:Leckar/Projeto-Trybesmith.git
 ```
  - Instale as dependências:
 ```bash
