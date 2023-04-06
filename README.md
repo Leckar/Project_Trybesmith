@@ -1,10 +1,44 @@
-# :construction: README em construção ! :construction:
-<!-- Olá, Tryber!
-Esse é apenas um arquivo inicial para o README do seu projeto.
-É essencial que você preencha esse documento por conta própria, ok?
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
-:warning: IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
--->
+
+# Trybesmith - API de gerenciamento de estoque e vendas
+
+Essa é uma RESTful API desenvolvida em Typescript para gerenciar estoque e vendas de itens de uma loja de temática medieval. A arquitetura de camadas MSC (Models, Service e Controllers) foi utilizada para possibilitar as operações de Criação, Leitura, Atualização e Exclusão (CRUD).
+
+## Tecnologias Utilizadas
+ - Typescript
+ - Node.js
+ - Express.js
+ - MySQL
+
+## Instalação e execução
+ - Clone o repositório:
+```bash
+  git clone https://github.com/Leckar/Projeto-Trybesmith
+```
+ - Instale as dependências:
+```bash
+  npm install
+```
+ - Crie o arquivo .env com as informações do banco de dados:
+```shell
+  MYSQL_USER=root
+  MYSQL_PASSWORD=password
+  MYSQL_HOST=localhost
+  JWT_SECRET=secret
+```
+ - Inicie a aplicação:
+```bash
+  npm start
+```
+### Endpoints
+
+POST /users - cadastro de usuários
+
+POST /login - login de usuários
+
+GET /products - retorna a lista de produtos cadastrados no estoque
+
+POST /products - cadastr um novo produto
+
+GET /orders - lista todas as vendas
+
+POSt /orders - cadastra uma nova venda
